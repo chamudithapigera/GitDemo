@@ -67,7 +67,7 @@ public class CustomerServiceIMPL implements CustomerService {
             return customerDTO;
 
         }else {
-            throw new RuntimeException("No customer");
+            throw new RuntimeException("No customer found");
         }
     }
 
