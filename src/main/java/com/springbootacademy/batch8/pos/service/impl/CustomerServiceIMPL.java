@@ -44,7 +44,7 @@ public class CustomerServiceIMPL implements CustomerService {
             customer.setCustomerSalary(customerUpdateDTO.getCustomerSalary());
 
             customerRepo.save(customer);
-            return customerUpdateDTO.getCustomerName() + " Updated Successful";
+            return customerUpdateDTO.getCustomerName() + " Updated Successful normally";
         }else {
             throw new RuntimeException("no data find for that id");
         }
